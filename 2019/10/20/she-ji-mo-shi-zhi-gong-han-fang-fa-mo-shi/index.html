@@ -692,6 +692,28 @@ CSCI 3132课程中的定义：Pull the code that builds the instances out and pu
     </div>
 
     
+        <link rel="stylesheet" href="/libs/gitalk/gitalk.css">
+<link rel="stylesheet" href="/css/my-gitalk.css">
+
+<div class="card gitalk-card" data-aos="fade-up">
+    <div id="gitalk-container" class="card-content"></div>
+</div>
+
+<script src="/libs/gitalk/gitalk.min.js"></script>
+<script>
+    let gitalk = new Gitalk({
+        clientID: '8a87b3e2c8fea8db975f',
+        clientSecret: '699b2855906c5ebbe48cb3f58715388b4871cad1',
+        repo: 'loloChan.github.io',
+        owner: 'loloChan',
+        admin: "loloChan",
+        id: '2019-10-20T12-18-00',
+        distractionFreeMode: false  // Facebook-like distraction free mode
+    });
+
+    gitalk.render('gitalk-container');
+</script>
+    
 
     
 
