@@ -266,7 +266,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                concision
+                不忘初心,砥砺前行
                 
             </div>
 
@@ -276,12 +276,12 @@
                 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
                 <script>
                     var typed = new Typed("#typed", {
-                        strings: ['你必须非常努力，才能看起来毫不费力', 'You have to work very hard to look effortless'],
-                        startDelay: 300,
-                        typeSpeed: 100,
-                        loop: true,
-                        backSpeed: 50,
-                        showCursor: true
+                        strings: ['你必须非常努力，才能看起来毫不费力', ''],
+                        startDelay: 0,
+                        typeSpeed: 0,
+                        loop: false,
+                        backSpeed: 10000000000000000000,
+                        showCursor: false
                     });
                 </script>
                 
@@ -312,11 +312,43 @@
             </div>
             <div class="tag-chips">
                 
+                
+                <a href="/tags/设计模式/" title="设计模式: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="设计模式" style="background-color: #F9EBEA;">设计模式
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
             </div>
         </div>
     </div>
 </div>
 
+    
+    <link rel="stylesheet" type="text/css" href="/libs/jqcloud/jqcloud.css">
+<style type="text/css">
+    #tag-wordcloud {
+        width: 100%;
+        height: 300px;
+    }
+</style>
+
+<div class="container" data-aos="fade-up">
+    <div class="card">
+        <div id="tag-wordcloud" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/jqcloud/jqcloud-1.0.4.min.js"></script>
+<script type="text/javascript">
+    
+
+    $('#tag-wordcloud').jQCloud([{"text":"设计模式","weight":1,"link":"http://yoursite.com/tags/设计模式/"}], {
+        autoResize: true
+    });
+</script>
     
 
 </main>
@@ -333,7 +365,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">73</span>&nbsp;字
+                class="white-color">950</span>&nbsp;字
             
             
             
@@ -402,23 +434,31 @@
             
         </div>
         <div class="col s12 m4 l4 social-link social-statis">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
-        <i class="fas fa-rss"></i>
+    <a href="https://github.com/loloChan?tab=repositories" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
     </a>
+
+
+
+    <a href="mailto:chenjianyuan0821@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=527365879" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 527365879" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
 
 </div>
     </div>
@@ -482,8 +522,6 @@ $(function () {
     })();
 </script>
 
-    
-    <script src="/libs/others/clicklove.js" async="async"></script>
     
     
     <script async src="/libs/others/busuanzi.pure.mini.js"></script>
